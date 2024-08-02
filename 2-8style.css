@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 300px;
+    width:300px;
+}
+.box{
+   height: 80%;
+   width: 80%;
+   padding: 10%;
+   background-color: aliceblue;
+   border: 1px solid black;
+   animation:myRotator 5s ease-in-out infinite;
+}
+.b{
+    background-color: black;
+}
+@keyframes myRotator{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
