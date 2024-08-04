@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 400px;
+    width: 500px;
+    background-color: aquamarine;
+}
+.flower{
+    position: absolute;
+    border-radius: 0% 100% 0% 100%/ 0% 100% 0% 100%;
+    /* background-color:red; */
+    height: 100px;
+    width: 100px;
+    animation-name:flower;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
+.f1{
+    animation-delay: 1s;
+    background-color: red;
+}
+.f2{
+    animation-delay: 1.5s;
+    background-color: yellow;
+}
+.f3{
+    animation-delay: 2s;
+    background-color: red;
+}
+.f4{
+    animation-delay: 2.5s;
+    background-color: yellow;
+}
+.f5{
+    animation-delay: 3s;
+    background-color: red;
+    
+}
+.f6{
+    animation-delay: 3.5s;
+    background-color: yellow;
+}
+
+@keyframes flower{
+    from{
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin:top left ;
+    }
+}
+/* .flower:hover{
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transform-origin: left top;
+} */
